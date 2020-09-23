@@ -8,7 +8,6 @@ class RecipeTest < Minitest::Test
   def test_it_exists_and_has_attributes
     recipe1 = Recipe.new("Mac and Cheese")
     ingredient1 = Ingredient.new({name: "Cheese",   unit: "oz", calories: 50})
-    ingredient2 = Ingredient.new({name: "Macaroni", unit: "oz", calories: 200})
 
     assert_instance_of Ingredient, ingredient1
     assert_instance_of Recipe, recipe1

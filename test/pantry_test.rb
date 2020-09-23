@@ -57,7 +57,7 @@ class PantryTest < Minitest::Test
 
     pantry.restock(ingredient1, 5)
     pantry.restock(ingredient1, 10)
-
+# binding.pry
     assert_equal false, pantry.enough_ingredients_for?(recipe1)
 
     pantry.restock(ingredient2, 7)

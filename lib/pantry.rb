@@ -14,12 +14,14 @@ class Pantry
   end
 
   def enough_ingredients_for?(recipe)
+    expected = []
     recipe.ingredients_required.each do |ingredient, amount|
-      if amount >= @stock[ingredient]
-        return true
+      if @stock[ingredient] >= amount
+        expected << true
       else
-        return false
+        expected << false
       end
     end
+    expected.all?
   end
 end

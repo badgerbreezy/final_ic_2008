@@ -4,4 +4,6 @@ class Recipe
     @name = name
     @ingredients_required = Hash.new
   end
+
+
 end

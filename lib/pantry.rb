@@ -6,6 +6,7 @@ class Pantry
 
   def stock_check(ingredient)
     @stock[ingredient]
+
   end
 
   def restock(ingredient, quantity)
@@ -13,7 +14,6 @@ class Pantry
   end
 
   def enough_ingredients_for?(recipe)
-    # require 'Pry';binding.pry
     recipe.ingredients_required.each do |ingredient, amount|
       if amount >= @stock[ingredient]
         return true
@@ -21,6 +21,5 @@ class Pantry
         return false
       end
     end
-
   end
 end

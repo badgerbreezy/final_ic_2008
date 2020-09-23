@@ -3,7 +3,7 @@
 * Fork this Repository
 * Clone your forked repo to your computer.
 * Complete the activity below.
-* Push your solution to your forked repo
+* Push your solution to your forked repo 
 * Submit a pull request from your repository to this repository
   * Put your name in your PR!
 

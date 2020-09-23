@@ -4,7 +4,6 @@ require 'Pry'
 require './lib/ingredient'
 require './lib/recipe'
 require './lib/pantry'
-require './lib/cookbook'
 
 class RecipeTest < Minitest::Test
   def test_it_exists_and_has_attributes
@@ -43,7 +42,6 @@ class RecipeTest < Minitest::Test
 
   def test_it_can_calculate_total_calories
     pantry = Pantry.new
-    cookbook = CookBook.new
     ingredient1 = Ingredient.new({name: "Cheese", unit: "C", calories: 100})
     ingredient2 = Ingredient.new({name: "Macaroni", unit: "oz", calories: 30})
     recipe1 = Recipe.new("Mac and Cheese")

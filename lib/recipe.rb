@@ -12,4 +12,12 @@ class Recipe
   def ingredients
     @ingredients_required.keys
   end
+
+  def total_calories
+    total_calories = Hash.new
+    @ingredients_required.each do |ingredient, amount|
+      total_calories[ingredient] = ingredient.calories * amount
+    end
+    total_calories.values.sum
+  end
 end

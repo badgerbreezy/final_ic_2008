@@ -17,4 +17,10 @@ class CookBook
     end
     ingredient_list.uniq
   end
+
+  def highest_calorie_meal
+    @recipes.sort_by do |recipe|
+      recipe.total_calories
+    end[-1]
+  end
 end
